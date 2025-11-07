@@ -1,0 +1,175 @@
+.footer {
+  background: #fff;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0 30px;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer__col h3,
+.footer__col h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer__col p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.footer__col ul li {
+  margin-bottom: 8px;
+}
+
+.footer__col ul li a {
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer__col ul li a:hover {
+  color: #ff6600;
+}
+
+.footer__info p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer__info i {
+  color: #ff6600;
+  margin-right: 6px;
+}
+
+/* Footer bottom */
+.footer__bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+
+.footer__app p,
+.footer__social p,
+.footer__branch p,
+.footer__subscribe p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer__app-links img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.footer__icons i {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer__icons i:hover {
+  color: #ff6600;
+}
+
+.btn-orange {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-form button {
+  background: #777;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.footer__icons {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+
+.footer__icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Icon container */
+.social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Màu nền riêng cho từng mạng */
+.social-icon.fb {
+  background: #1877f2;
+}
+
+.social-icon.ig {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.social-icon.yt {
+  background: #ff0000;
+}
+
+.social-icon.in {
+  background: #0a66c2;
+}
+
+/* Hiệu ứng hover */
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
