@@ -1,0 +1,83 @@
+/* ========== IMPORT FONT ========== */
+@import url('./fonts.css');
+
+/* ========== RESET CSS ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* ========== ROOT VARIABLES ========== */
+:root {
+  --color-primary: #00a8e8;      /* Màu xanh LuxMove */
+  --color-secondary: #0077b6;    /* Xanh đậm hơn */
+  --color-background: #f8f9fa;
+  --color-text: #222;
+  --color-border: #ddd;
+  --header-height: 70px;
+  --container-width: 1200px;
+}
+
+/* ========== BASE STYLES ========== */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========== LAYOUT HELPERS ========== */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ========== SCROLLBAR (tùy chọn) ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-secondary);
+}

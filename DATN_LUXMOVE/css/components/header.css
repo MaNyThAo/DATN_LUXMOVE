@@ -1,0 +1,86 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header chính */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 30px;
+}
+
+/* Logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Navigation */
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header__nav a:hover {
+  color: #ff6600;
+}
+
+/* Nút hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+  /* Ẩn menu và chỉ hiển thị icon 3 gạch */
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #ddd;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Khi bật menu */
+  .header__nav.active {
+    display: flex;
+  }
+}
