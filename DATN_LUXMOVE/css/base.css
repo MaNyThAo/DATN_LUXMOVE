@@ -1,5 +1,8 @@
 /* ========== IMPORT FONT ========== */
 @import url('./fonts.css');
+@import url('./layout.css');
+@import url('./themes.css');
+
 
 /* ========== RESET CSS ========== */
 *,
